@@ -27,6 +27,8 @@ bspc config pointer_action2 resize_side
 bspc config pointer_action3 resize_corner
 bspc config remove_disabled_monitors true
 bspc config merge_overlapping_monitors true
+bspc config automatic_scheme longest_side
+bspc config initial_polarity second_child
 
 #BSPWM coloring
 bspc config normal_border_color		"#000000"
@@ -80,17 +82,19 @@ bspc rule -a Gnome-disks state=tiled
 bspc rule -a Xfce4-settings-manager state=tiled
 
 #open applications on specific workspaces
-bspc rule -a Firefox desktop='^1' follow=on
-#bspc rule -a Chromium desktop='^1'  follow=on
+bspc rule -a 'Firefox Developer Edition':Navigator desktop='^1' follow=on
 bspc rule -a Subl3 desktop='^2' follow=on
 bspc rule -a Gimp desktop='^3'	follow=on
-bspc rule -a loffice desktop='^4' follow=on
-bspc rule -a Pamac-manager desktop='^5' follow=on
+bspc rule -a pm desktop='^4' follow=open
+bspc rule -a tm desktop='^5' follow=on
 bspc rule -a VirtualBox desktop='^6' follow=on
-bspc rule -a Vivaldi-stable desktop='^7' follow=on
+bspc rule -a Chromium desktop='^6'  follow=on
+bspc rule -a firefox desktop='^7' follow=on
+#bspc rule -a Vivaldi-stable desktop='^7' follow=on
 bspc rule -a Audacity desktop='^7' follow=on
-bspc rule -a Olive desktop='^8' follow=on
-bspc rule -a Evolution desktop='^9' follow=on
+bspc rule -a kdenlive desktop='^8' follow=on
+bspc rule -a Hexchat desktop='^8' follow=on
+bspc rule -a Thunderbird desktop='^9' follow=on
 #bspc rule -a mpv desktop='^6'  follow=on
 bspc rule -a keepassxc desktop='^10' follow=on
 #bspc rule -a Vivaldi-snapshot desktop='^6' follow=on
