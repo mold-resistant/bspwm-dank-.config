@@ -67,7 +67,7 @@ super + h
 super + m
     clementine
 
-#file search
+#Catfish
 super + s
     catfish
 
@@ -83,7 +83,7 @@ super + r
 super + t
     urxvt
 
-#calculator
+#Galculator
 super + c
     galculator
 
@@ -99,13 +99,29 @@ super + v
 super + g
     gcolor3
 
-#Chromium
+#Firefox-Dev
+super + q
+    firefox-developer-edition
+
+#Xfce4-appfinder
+super + a
+     xfce4-appfinder
+
+#Hexchat
+super + b
+     hexchat
+
+#Firefox
+super + e
+     firefox
+
+#Termite
+super + y
+     termite
+
+#Browser
 super + w
     chromium -no-default-browser-check
-
-#Hide polybar
-super + y
-    polybar-msg cmd toggle
 
 #Oblogout
 super + x
@@ -137,10 +153,13 @@ super + shift + Return
 #super + shift + KP_Enter
 #   nemo
 
+#Xfce4-settings-manager
+super + shift + a
+     xfce4-settings-manager
 
 #DMENU
 super + shift + d
-    dmenu_run -i -nb '#191919' -nf '#30E60B' -sb '#30E60B' -sf '#191919' -fn 'IBMPlexMono:pixelsize=14'
+    dmenu_run -i -nb '#191919' -nf '#89D273' -sb '#89D273' -sf '#191919' -fn 'IBMPlexMono:pixelsize=14'
 
 #Reload bspwm
 super + shift + r
@@ -158,91 +177,13 @@ super + shift + q
 super + shift + x
 	bspc quit
 
-
-#########################
-# CONTROL + ALT KEYS    #
-#########################
-
-
-#Xfce4-appfinder
-ctrl + alt + a
-     xfce4-appfinder
-
-#Hexchat
-ctrl + alt + b
-     hexchat
-
-#Catfish
-ctrl + alt + c
-     catfish
-
-#Evolution
-ctrl + alt + e
-     evolution
-
-#Firefox
-ctrl + alt + f
-     firefox
-
-#Chromium
-ctrl + alt + g
-     chromium -no-default-browser-check
-
-#Nitrogen
-ctrl + alt + i
-     nitrogen
-
 #Screen-Locker
-ctrl + alt + k
+super + shift + z
      slimlock
 
- #Meld
-ctrl + alt + m
+#Meld
+super + shift + f
      meld
-
-#Xfce4-settings-manager
-ctrl + alt + s
-     xfce4-settings-manager
-
-#Compton Toggle
-ctrl + alt + o
-     ~/.config/bspwm/scripts/compton-toggle.sh
-
-#Xterm
-ctrl + alt + t
-     xterm
-
-#Rofi theme selector
-ctrl + alt + r
-   rofi-theme-selector
-
-#Firefox-dev-ed
-ctrl + alt + Return
-     firefox-developer-edition
-
-#Keyboard dependent
-#Urxvt
-#ctrl + alt + KP_Enter
-#     urxvt
-
-#pamac-manager
-ctrl + alt + p
-     pamac-manager
-
-
-#########################
-# ALT + ... KEYS        #
-#########################
-
-
-#Gmrun
-alt + F2
-    gmrun
-
-#Xfce4-appfinder
-alt + F3
-    xfce4-appfinder
-
 
 
 #########################
@@ -359,25 +300,8 @@ super + shift + Tab
 super + Tab
 	bspc desktop -f next
 
-
-# Focus next/previous window
-ctrl + alt + Left
-	bspc node --focus west
-
-# Focus next/previous window
-ctrl + alt + Right
-	bspc node --focus east
-
-# Focus Up window
-ctrl +alt + Up
-	bspc node --focus north
-
-# Focus Down window
-ctrl + alt + Down
-	bspc node --focus south
-
 #Rotate desktop
-alt + space
+super + z
 	bspc node @/ --rotate {90,-90}
 
 # Focus/swap windows by direction
@@ -393,11 +317,11 @@ super + {_,shift + }a
 	bspc node @/ --flip {vertical,horizontal}
 
 # Expand tiled space
-alt + shift + {h,j,k,l}
+ctrl + super + {h,j,k,l}
 	bspc node {@west -r -10,@south -r +10,@north -r -10,@east -r +10}
 
 # Contract tiled space
-super + ctrl + {h,j,k,l}
+ctrl + shift + {h,j,k,l}
 	bspc node {@east -r -10,@north -r +10,@south -r -10,@west -r +10}
 
 # Increase/decrease window gap on focused desktop
@@ -405,7 +329,7 @@ super + bracket{left,right}
 	bspc config -d focused window_gap $((`bspc config -d focused window_gap` {-,+} 5 ))
 
 # Move floalting window
-super + alt + {_,shift + }{Left,Down,Up,Right}
+ctrl + space {_,shift + }{Left,Down,Up,Right}
 	~/.config/bspwm/scripts/move-window {_,edge-}{west,south,north,east}
 
 # set the window state
