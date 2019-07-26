@@ -67,7 +67,7 @@ super + h
 super + m
     clementine
 
-#Catfish
+#file search
 super + s
     catfish
 
@@ -75,7 +75,7 @@ super + s
 super + p
 	bspc node --state \~pseudo_tiled
 
-#Rofi theme selector
+#Ranger
 super + r
     urxvt -e ranger
 
@@ -83,7 +83,7 @@ super + r
 super + t
     termite
 
-#Galculator
+#calculator
 super + c
     galculator
 
@@ -99,7 +99,7 @@ super + v
 super + g
     gcolor3
 
-#Browser
+#Chromium
 super + w
     chromium -no-default-browser-check
 
