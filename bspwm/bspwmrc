@@ -85,7 +85,7 @@ bspc rule -a Xfce4-settings-manager state=tiled
 bspc rule -a 'Firefox Developer Edition':Navigator desktop='^1' follow=on
 bspc rule -a Subl3 desktop='^2' follow=on
 bspc rule -a Gimp desktop='^3'	follow=on
-bspc rule -a pm desktop='^4' follow=open
+bspc rule -a pm desktop='^4' follow=on
 bspc rule -a tm desktop='^5' follow=on
 bspc rule -a VirtualBox desktop='^6' follow=on
 bspc rule -a Chromium desktop='^6'  follow=on
