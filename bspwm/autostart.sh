@@ -31,6 +31,7 @@ conky -c $HOME/.config/bspwm/system-overview &
 run nm-applet &
 run pamac-tray &
 run xfce4-power-manager &
+run gxkb &
 numlockx on &
 blueberry-tray &
 compton --config $HOME/.config/bspwm/compton.conf &
