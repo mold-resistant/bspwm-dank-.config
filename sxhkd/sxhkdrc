@@ -81,7 +81,7 @@ super + r
 
 #Urxvt
 super + t
-    termite
+    urxvt
 
 #calculator
 super + c
@@ -117,7 +117,7 @@ super + Escape
 
 #Terminal emulator
 super + Return
-	urxvt
+	xfce4-terminal
 
 #Keyboard dependent
 #Terminal emulator
@@ -208,7 +208,7 @@ ctrl + alt + s
 ctrl + alt + o
      ~/.config/bspwm/scripts/compton-toggle.sh
 
-#Urxvt
+#Xterm
 ctrl + alt + t
      xterm
 
@@ -216,15 +216,7 @@ ctrl + alt + t
 ctrl + alt + r
    rofi-theme-selector
 
-#Pulse Audio Control
-ctrl + alt + u
-     pavucontrol
-
-#Firefox-dev
-ctrl + alt + w
-     firefox-developer-edition
-
-#Urxvt
+#Firefox-dev-ed
 ctrl + alt + Return
      firefox-developer-edition
 
